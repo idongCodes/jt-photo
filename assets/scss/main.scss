@@ -1,0 +1,356 @@
+// Variables
+
+$purpleHue: #6c63ff;
+
+// Header
+
+html {
+  scroll-behavior: smooth;
+  font: {
+    family: sans-serif;
+  }
+  body {
+    header {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      background: {
+        image: url("../media/undraw_fashion_photoshoot_mtq8.png");
+        repeat: no-repeat;
+        position: top;
+      }
+      .top-bar {
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 98;
+        top: 0;
+        .logo {
+          a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            img {
+              width: 80px;
+              height: 80px;
+            }
+            h4 {
+              color: $purpleHue;
+              font: {
+                family: serif;
+                size: 1.5rem;
+              }
+            }
+          }
+        }
+        nav {
+          a {
+            padding: 3px 15px;
+            text: {
+              decoration: none;
+              transform: uppercase;
+            }
+            color: $purpleHue;
+
+            font: {
+              weight: bold;
+              size: 1.2rem;
+            }
+            &:hover {
+              color: grey;
+            }
+          }
+        }
+      }
+      .hero-content {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        background: rgba(white, 0.7);
+        padding: 14% 0 0 0;
+
+        * {
+          margin: 20px 0 0 7%;
+        }
+
+        h1 {
+          color: $purpleHue;
+          font: {
+            size: 5rem;
+          }
+        }
+        h3 {
+          font: {
+            size: 3.5rem;
+          }
+        }
+        .book-btn {
+          text-decoration: none;
+          background: $purpleHue;
+          color: white;
+          padding: 20px;
+          border-radius: 6px;
+          box-shadow: 3px 3px 5px grey;
+          position: relative;
+          left: 2%;
+          top: 60px;
+          font: {
+            weight: bold;
+            size: 1.7rem;
+          }
+          &:hover {
+            background: grey;
+          }
+        }
+      }
+    }
+
+    // About
+
+    #about {
+      position: relative;
+      z-index: 97;
+      .abt-title {
+        h3 {
+          color: white;
+          margin: 0 0 15px;
+          font: {
+            size: 2.8rem;
+          }
+        }
+
+        h4 {
+          margin: 0 0 30px;
+          font: {
+            size: 1.7rem;
+          }
+
+          a {
+            @extend h4;
+            text-decoration: none;
+            color: grey;
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+
+      *,
+      *:after {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+      background: $purpleHue;
+      border-radius: 20px;
+      padding: 60px;
+
+      .imgs-text {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        div {
+          width: 40%;
+          line-height: 2.5rem;
+          display: flex;
+          flex-direction: column;
+          font: {
+            size: 1.7rem;
+          }
+
+          .price {
+              width: 18%;
+              margin: 0 auto;
+              background: white;
+              border-radius: 10px;
+              text-align: center;
+              padding: 2%;
+              position: absolute;
+              top: 68%;
+              left: 15%;
+              border: 2px solid $purpleHue;
+
+              h3 {
+                  font-size: 5rem;
+                  font-weight: lighter;
+                  border-bottom: 2px solid black;
+                  display: inline-block;
+                  width: 55%;
+                  margin: 20px auto;
+                  line-height: 1.7rem;
+                  padding-bottom: 10px;
+
+                  span {
+                      font-size: 1rem;
+                  }
+              }
+
+              small {
+                  font-size: .7rem;
+                  color: red;
+              }
+          }
+
+          a {
+            text-decoration: none;
+            background: white;
+            color: $purpleHue;
+            width: 17%;
+            text-align: center;
+            padding: 6px 10px;
+            border-radius: 6px;
+            position: relative;
+            top: 30px;
+            left: 30px;
+            font: {
+              weight: bolder;
+            }
+
+            &:hover {
+              background: grey;
+            }
+          }
+        }
+        .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-start;
+          width: 55%;
+
+          img {
+            width: 30%;
+            transition-duration: 600ms;
+
+            &:hover {
+              transform: scale(2);
+              position: relative;
+              z-index: 96;
+              box-shadow: 5px 5px 5px black;
+              transition-duration: 600ms;
+            }
+          }
+        }
+      }
+    }
+
+    // Book
+
+    // Contact
+
+    #contact {
+      height: 70vh;
+      padding: 2%;
+      margin-bottom: 1%;
+
+      h1 {
+          text-align: center;
+          margin-bottom: 4%;
+          font-size: 2.8rem;
+          color: $purpleHue;
+      }
+
+      .map-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 2.5%;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 30%;
+
+          * {
+            padding: 1.5%;
+            margin: 2% 0;
+            border-radius: 10px;
+            border: 2px solid $purpleHue;
+            font: {
+              size: 1.3rem;
+            }
+
+            &:hover {
+                border: 2px dashed $purpleHue;
+            }
+          }
+
+          input:focus, textarea:focus {
+            outline: none;
+          }
+
+          .submit {
+              background: $purpleHue;
+              color: white;
+          }
+        }
+      } // END MAP-FORM
+
+      .contact-icons {
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: $purpleHue;
+          font-size: 3rem;
+
+          &:hover {
+            color: grey;
+          }
+        }
+
+        * {
+          margin: 0 .5%;
+        }
+      }
+    } // END CONTACT
+
+    // Footer
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      margin-top: 4%;
+
+      small {
+        a {
+          text-decoration: none;
+          color: $purpleHue;
+          padding-bottom: 3px;
+          border-bottom: 1px solid $purpleHue;
+
+          &:hover {
+            color: darken($purpleHue, 15%);
+          }
+        }
+      }
+    }
+
+    // Back to top
+    .back-to-top {
+      position: fixed;
+      z-index: 98;
+      bottom: 12%;
+      right: 2%;
+      a {
+        text-decoration: none;
+        background: $purpleHue;
+        color: white;
+        border-radius: 5px;
+        padding: 8px;
+        border: 1px solid white;
+        &:hover {
+          background: grey;
+        }
+      }
+    }
+  }
+}

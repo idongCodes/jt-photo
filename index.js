@@ -1,0 +1,1 @@
+document.querySelector("#copy").innerHTML = `${ new Date().getFullYear() }`;
