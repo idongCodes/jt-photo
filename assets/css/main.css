@@ -3,7 +3,8 @@ html {
   font-family: sans-serif;
 }
 html body header {
-  height: 90vh;
+  height: 1000px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   background-image: url("../media/undraw_fashion_photoshoot_mtq8.png");
@@ -11,7 +12,7 @@ html body header {
   background-position: top;
 }
 html body header .top-bar {
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +30,7 @@ html body header .top-bar .logo a img {
   width: 80px;
   height: 80px;
 }
-html body header .top-bar .logo a h4, html body header .top-bar .logo a #about .abt-title h4 a, html body #about .abt-title h4 header .top-bar .logo a a {
+html body header .top-bar .logo a h4 {
   color: #6c63ff;
   font-family: serif;
   font-size: 1.5rem;
@@ -79,110 +80,100 @@ html body header .hero-content .book-btn:hover {
   background: grey;
 }
 html body #about {
-  position: relative;
-  z-index: 97;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 120px 0 60px;
   background: #6c63ff;
   border-radius: 20px;
-  padding: 60px;
+  box-shadow: 5px 5px 5px grey;
 }
-html body #about .abt-title h3 {
-  color: white;
-  margin: 0 0 15px;
-  font-size: 2.8rem;
-}
-html body #about .abt-title h4, html body #about .abt-title h4 a {
-  margin: 0 0 30px;
-  font-size: 1.7rem;
-}
-html body #about .abt-title h4 a {
-  text-decoration: none;
-  color: grey;
-}
-html body #about .abt-title h4 a:hover {
-  color: white;
-}
-html body #about *,
-html body #about *:after {
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-html body #about .imgs-text {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-html body #about .imgs-text div {
+html body #about .copy {
   width: 40%;
-  line-height: 2.5rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.7rem;
 }
-html body #about .imgs-text div .price {
-  width: 18%;
-  margin: 0 auto;
-  background: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 2%;
-  position: absolute;
-  top: 68%;
-  left: 15%;
-  border: 2px solid #6c63ff;
+html body #about .copy .abt-title h3 {
+  margin: 0 0 15px;
+  color: white;
+  font-size: 4rem;
 }
-html body #about .imgs-text div .price h3 {
-  font-size: 5rem;
-  font-weight: lighter;
-  border-bottom: 2px solid black;
-  display: inline-block;
-  width: 55%;
-  margin: 20px auto;
-  line-height: 1.7rem;
-  padding-bottom: 10px;
+html body #about .copy .abt-title h4 {
+  margin: 0;
+  font-size: 2rem;
 }
-html body #about .imgs-text div .price h3 span {
-  font-size: 1rem;
-}
-html body #about .imgs-text div .price small {
-  font-size: 0.7rem;
-  color: red;
-}
-html body #about .imgs-text div a {
+html body #about .copy .abt-title h4 a {
+  color: black;
   text-decoration: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+html body #about .copy p {
+  color: #ddd;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+}
+html body #about .bk-btn-abt {
+  border: 2px solid white;
+  color: white;
+  width: 20%;
+  padding: 8px;
+  margin: 0 auto 50px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+html body #about .bk-btn-abt:hover {
   background: white;
   color: #6c63ff;
-  width: 17%;
-  text-align: center;
-  padding: 6px 10px;
-  border-radius: 6px;
-  position: relative;
-  top: 30px;
-  left: 30px;
-  font-weight: bolder;
 }
-html body #about .imgs-text div a:hover {
-  background: grey;
+html body #about .price-card {
+  background: white;
+  box-shadow: 5px 5px 10px black;
+  color: black;
+  border-radius: 15px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 15px;
 }
-html body #about .imgs-text .gallery {
+html body #about .price-card h3 {
+  margin: 60px auto 0;
+  line-height: 3rem;
+  border-bottom: 2px solid black;
+  width: 70%;
+  font-size: 10rem;
+}
+html body #about .price-card h3 span {
+  font-size: 1.7rem;
+}
+html body #about .price-card p {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 15px auto;
+}
+html body #about .price-card small {
+  color: red;
+}
+html body #about .gallery {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
-  width: 55%;
+  justify-content: center;
 }
-html body #about .imgs-text .gallery img {
-  width: 30%;
-  transition-duration: 600ms;
+html body #about .gallery img {
+  width: 50%;
+  filter: grayscale(0.9);
+  transition-duration: 500ms;
 }
-html body #about .imgs-text .gallery img:hover {
-  transform: scale(2);
-  position: relative;
-  z-index: 96;
+html body #about .gallery img:hover {
+  filter: grayscale(0);
   box-shadow: 5px 5px 5px black;
-  transition-duration: 600ms;
+  transform: scale(1.6);
+  position: relative;
+  z-index: 2;
+  transition-duration: 500ms;
 }
 html body #contact {
   height: 70vh;
@@ -254,16 +245,17 @@ html body footer small a:hover {
 html body .back-to-top {
   position: fixed;
   z-index: 98;
-  bottom: 12%;
-  right: 2%;
+  bottom: 40px;
+  right: 40px;
 }
 html body .back-to-top a {
   text-decoration: none;
   background: #6c63ff;
   color: white;
+  font-weight: bolder;
   border-radius: 5px;
-  padding: 8px;
-  border: 1px solid white;
+  padding: 12px;
+  border: 2px solid white;
 }
 html body .back-to-top a:hover {
   background: grey;

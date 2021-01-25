@@ -18,78 +18,61 @@
     <header>
       <section class="top-bar">
         <div class="logo">
-          <a href="">
+          <a href="#top">
             <img src="./assets/media/logo.png" alt="camera logo" />
             <h4>JT<br />Photography</h4>
           </a>
         </div>
         <nav>
-          <a href="">Home</a>
+          <a href="#top">Home</a>
           <a href="#about">About</a>
-          <a href="#book">Book</a>
+          <a href="sms:+16179100849&body=Hi Joy, I would like to book your photography room.">Book</a>
           <a href="#contact">Contact</a>
         </nav>
       </section>
       <section class="hero-content">
         <h1>Need a Photography Studio?</h1>
         <h3>Come to JT-Studios</h3>
-        <a href="" class="book-btn">Book Now</a>
+        <a href="sms:+16179100849&body=Hi Joy, I would like to book your photography room." class="book-btn">Book Now</a>
       </section>
     </header>
 
     <section id="about">
-      <div class="abt-title">
-        <h3>JT-Photograhy</h3>
-        <h4>
-          Brought to you by <a href="https://joystouch.com">Joy's Touch</a>
-        </h4>
-      </div>
+      <div class="copy">
+        <div class="abt-title">
+          <h3>JT-Photograhy</h3>
+          <h4>
+            Brought to you by <a href="https://joystouch.com">Joy's Touch</a>
+          </h4>
+        </div>
 
-      <div class="imgs-text">
-        <section class="gallery">
-          <img
-            src="./assets/media/00101_kpE2UEFUsh8z_0CI0t2_1200x900.jpg"
-            alt=""
-          />
-          <img
-            src="./assets/media/00d0d_9eRQujEJ3UAz_0CI0t2_1200x900.jpg"
-            alt=""
-          />
-          <img
-            src="./assets/media/00g0g_dqwbrBRNiYCz_0CI0t2_1200x900.jpg"
-            alt=""
-          />
-          <img
-            src="./assets/media/00k0k_7O3Q3iZfo7nz_0CI0t2_1200x900.jpg"
-            alt=""
-          />
-          <img
-            src="./assets/media/00o0o_fW7VOI8mmfPz_0CI0t2_1200x900.jpg"
-            alt=""
-          />
-        </section>
-
-        <div>
+        <p>
           Welcome to JT-Photography! If you're especially an aspiring
           photographer, Joy's Touch has opened up space for a photography room.
           If you're in need for an indoor small sized photo studio feel free to
           book this space for practice, for paid photoshoots, etc. The current
           equipment is yours to use or bring your own equipment if you'd like!
-          <br />
+        </p>
 
-          <a href="">Book Now</a>
+        <a href="sms:+16179100849&body=Hi Joy, I would like to book your photography room." class="bk-btn-abt">Book Now</a>
         
-          <div class="price">
-            <h3>$80<br><span>per hour</span></h3>
-            <p>Studio lights (3)</p>
-            <p>Backdrop</p>
-            <p>Light reflector</p>
-            <p>Bathroom</p>
+        <div class="price-card">
+          <h3>$80<br><span>per hour</span></h3>
+          <p>Studio lights (3)</p>
+          <p>Backdrop</p>
+          <p>Light reflector</p>
+          <p>Bathroom</p>
           <small>Huge parking lot in back</small>
         </div>
-
-        </div>
       </div>
+
+      <div class="gallery">
+        <img src="./assets/media/00101_kpE2UEFUsh8z_0CI0t2_1200x900.jpg" alt="" />
+        <img src="./assets/media/00d0d_9eRQujEJ3UAz_0CI0t2_1200x900.jpg" alt="" />
+        <img src="./assets/media/00g0g_dqwbrBRNiYCz_0CI0t2_1200x900.jpg" alt="" />
+        <img src="./assets/media/00k0k_7O3Q3iZfo7nz_0CI0t2_1200x900.jpg" alt="" />
+        <img src="./assets/media/00o0o_fW7VOI8mmfPz_0CI0t2_1200x900.jpg" alt="" />
+    </div>
     </section>
 
     <section id="contact">
@@ -107,17 +90,17 @@
           tabindex="0"
         ></iframe>
 
-        <form action="formaction.php" method="post" name="photocontactform">
+        <form action="mailto:contactjoystouch@gmail.com&subject=Photography Room Inquiry" target="_blank" rel="noopener noreferrer" method="post" enctype="text/plain">
             
-          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="Name" placeholder="Name" />
           
-          <input type="email" name="email" placeholder="Your email" />
+          <input type="email" name="From" placeholder="Your email" />
           
-          <input type="text" name="subject" placeholder="Subject" />
+          <input type="text" name="Subject" placeholder="Subject" />
           
-          <textarea name="message" placeholder="Message..." cols="30" rows="10"></textarea>
+          <textarea name="Message" placeholder="Message..." cols="30" rows="10"></textarea>
           
-          <input type="submit" value="Submit" class="submit" />
+          <input type="submit" value="Submit"  class="submit" />
         
         </form>
       </div>
@@ -147,7 +130,7 @@
           <ion-icon name="logo-twitter"></ion-icon>
         </a>
 
-        <a href="tel:+16179100849" target="_blank" rel="noopener noreferrer">
+        <a href="sms:+16179100849&body=Hi Joy, I would like to book your photography room." target="_blank" rel="noopener noreferrer">
           <ion-icon name="phone-portrait-outline"></ion-icon>
         </a>
 
