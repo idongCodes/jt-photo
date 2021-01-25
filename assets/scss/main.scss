@@ -5,13 +5,16 @@ $purpleHue: #6c63ff;
 // Header
 
 html {
+  
   scroll-behavior: smooth;
   font: {
     family: sans-serif;
   }
   body {
+
     header {
-      height: 90vh;
+      height: 1000px;
+      padding-top: 60px;
       display: flex;
       flex-direction: column;
       background: {
@@ -19,8 +22,8 @@ html {
         repeat: no-repeat;
         position: top;
       }
-      .top-bar {
-        background: white;
+      .top-bar{
+        background: rgba(white, .8);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -111,132 +114,127 @@ html {
     // About
 
     #about {
-      position: relative;
-      z-index: 97;
-      .abt-title {
-        h3 {
-          color: white;
-          margin: 0 0 15px;
-          font: {
-            size: 2.8rem;
-          }
-        }
-
-        h4 {
-          margin: 0 0 30px;
-          font: {
-            size: 1.7rem;
-          }
-
-          a {
-            @extend h4;
-            text-decoration: none;
-            color: grey;
-
-            &:hover {
-              color: white;
-            }
-          }
-        }
-      }
-
-      *,
-      *:after {
-        margin: 0;
-        padding: 0;
-        border: none;
-        box-sizing: border-box;
-        font-size: 62.5%;
-      }
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding: 120px 0 60px;
       background: $purpleHue;
       border-radius: 20px;
-      padding: 60px;
+      box-shadow: 5px 5px 5px grey;
 
-      .imgs-text {
+      .copy {
+        width: 40%;
+        text-align: center;
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        flex-direction: column;
 
-        div {
-          width: 40%;
-          line-height: 2.5rem;
-          display: flex;
-          flex-direction: column;
-          font: {
-            size: 1.7rem;
-          }
+        .abt-title {
 
-          .price {
-              width: 18%;
-              margin: 0 auto;
-              background: white;
-              border-radius: 10px;
-              text-align: center;
-              padding: 2%;
-              position: absolute;
-              top: 68%;
-              left: 15%;
-              border: 2px solid $purpleHue;
-
-              h3 {
-                  font-size: 5rem;
-                  font-weight: lighter;
-                  border-bottom: 2px solid black;
-                  display: inline-block;
-                  width: 55%;
-                  margin: 20px auto;
-                  line-height: 1.7rem;
-                  padding-bottom: 10px;
-
-                  span {
-                      font-size: 1rem;
-                  }
-              }
-
-              small {
-                  font-size: .7rem;
-                  color: red;
-              }
-          }
-
-          a {
-            text-decoration: none;
-            background: white;
-            color: $purpleHue;
-            width: 17%;
-            text-align: center;
-            padding: 6px 10px;
-            border-radius: 6px;
-            position: relative;
-            top: 30px;
-            left: 30px;
+          h3 {
+            margin: 0 0 15px;
+            color: white;
             font: {
-              weight: bolder;
+              size: 4rem;
             }
+          }
 
-            &:hover {
-              background: grey;
+          h4 {
+            margin: 0;
+            font: {
+              size: 2rem;
+            }
+            
+            a {
+              color: black;
+              text-decoration: none;
+              border-bottom: 2px solid black;
+              padding-bottom: 5px;
             }
           }
         }
-        .gallery {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: flex-start;
-          width: 55%;
 
-          img {
-            width: 30%;
-            transition-duration: 600ms;
+        p {
+          color: #ddd;
+          line-height: 2.5rem;
+          font: {
+            size: 1.8rem;
+          }
+        }
+      }
 
-            &:hover {
-              transform: scale(2);
-              position: relative;
-              z-index: 96;
-              box-shadow: 5px 5px 5px black;
-              transition-duration: 600ms;
+      .bk-btn-abt {
+        border: 2px solid white;
+        color: white;
+        width: 20%;
+        padding: 8px;
+        margin: 0 auto 50px;
+        text-decoration: none;
+        border-radius: 7px;
+        font: {
+          weight: bolder;
+          size: 1.3rem;
+        }
+
+        &:hover {
+          background: white;
+          color: $purpleHue;
+        }
+      }
+
+      .price-card {
+        background: white;
+        box-shadow: 5px 5px 10px black;
+        color: black;
+        border-radius: 15px;
+        width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+
+        h3 {
+          margin: 60px auto 0;
+          line-height: 3rem;
+          border-bottom: 2px solid black;
+          width: 70%;
+          font: {
+            size: 10rem;
+          }
+
+          span {
+            font: {
+              size: 1.7rem;
             }
+          }
+        }
+
+        p {
+          color: rgba(black, .7);
+          margin: 15px auto;
+        }
+
+        small {
+          color: red;
+        }
+      }
+
+      .gallery {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 50%;
+          filter: grayscale(.9);
+          transition-duration: 500ms;
+
+          &:hover {
+            filter: grayscale(0);
+            box-shadow: 5px 5px 5px black;
+            transform: scale(1.6);
+            position: relative;
+            z-index: 2;
+            transition-duration: 500ms;
           }
         }
       }
@@ -338,15 +336,16 @@ html {
     .back-to-top {
       position: fixed;
       z-index: 98;
-      bottom: 12%;
-      right: 2%;
+      bottom: 40px;
+      right: 40px;
       a {
         text-decoration: none;
         background: $purpleHue;
         color: white;
+        font-weight: bolder;
         border-radius: 5px;
-        padding: 8px;
-        border: 1px solid white;
+        padding: 12px;
+        border: 2px solid white;
         &:hover {
           background: grey;
         }
