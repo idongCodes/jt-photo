@@ -315,9 +315,8 @@ html body #about .gallery img:hover {
   }
 }
 html body #contact {
-  height: 70vh;
-  padding: 2%;
-  margin-bottom: 1%;
+  padding-top: 60px;
+  margin-bottom: 10px;
 }
 html body #contact h1 {
   text-align: center;
@@ -335,12 +334,15 @@ html body #contact .map-form {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 2.5%;
+  margin-bottom: 50px;
 }
 @media all and (max-width: 425px) {
   html body #contact .map-form {
     flex-direction: column-reverse;
   }
+}
+html body #contact .map-form iframe {
+  width: 50%;
 }
 @media all and (max-width: 425px) {
   html body #contact .map-form iframe {
@@ -351,7 +353,7 @@ html body #contact .map-form {
 html body #contact .map-form form {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
 }
 @media all and (max-width: 425px) {
   html body #contact .map-form form {
@@ -378,6 +380,7 @@ html body #contact .map-form form .submit {
 }
 html body #contact .contact-icons {
   text-align: center;
+  margin: 0;
 }
 @media all and (max-width: 425px) {
   html body #contact .contact-icons {
@@ -388,6 +391,7 @@ html body #contact .contact-icons a {
   text-decoration: none;
   color: #6c63ff;
   font-size: 3rem;
+  margin: 0;
 }
 html body #contact .contact-icons a:hover {
   color: grey;
