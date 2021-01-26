@@ -58,6 +58,20 @@ html body header .top-bar .logo a h4 {
     padding: 0 15px;
   }
 }
+html body header .top-bar nav :nth-child(3) {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #6c63ff;
+}
+html body header .top-bar nav :nth-child(3):hover {
+  color: white;
+  background: #6c63ff;
+}
+@media all and (max-width: 425px) {
+  html body header .top-bar nav :nth-child(3) {
+    padding: 6px 8px;
+  }
+}
 html body header .top-bar nav a {
   padding: 3px 15px;
   text-decoration: none;
