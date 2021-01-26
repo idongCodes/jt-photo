@@ -392,18 +392,17 @@ html body #contact .contact-icons a {
 html body #contact .contact-icons a:hover {
   color: grey;
 }
+html body #contact .contact-icons a * {
+  margin: 0 0.5%;
+}
 @media all and (max-width: 425px) {
   html body #contact .contact-icons a {
     font-size: 2rem;
   }
 }
-html body #contact .contact-icons * {
-  margin: 0 0.5%;
-}
 html body footer {
   padding: 30px;
   text-align: center;
-  margin-top: 4%;
 }
 @media all and (max-width: 425px) {
   html body footer {
@@ -424,8 +423,7 @@ html body footer {
 html body footer small a {
   text-decoration: none;
   color: #6c63ff;
-  padding-bottom: 3px;
-  border-bottom: 1px solid #6c63ff;
+  font-weight: bolder;
 }
 html body footer small a:hover {
   color: #2417ff;

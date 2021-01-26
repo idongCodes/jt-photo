@@ -477,13 +477,13 @@ html {
             color: grey;
           }
 
+          * {
+            margin: 0 .5%;
+          }
+
           @media all and (max-width: $mobile) {
             font-size: 2rem;
           }
-        }
-
-        * {
-          margin: 0 .5%;
         }
       }
     } // END CONTACT
@@ -493,7 +493,6 @@ html {
     footer {
       padding: 30px;
       text-align: center;
-      margin-top: 4%;
 
       @media all and (max-width: $mobile) {
         position: fixed;
@@ -514,8 +513,7 @@ html {
         a {
           text-decoration: none;
           color: $purpleHue;
-          padding-bottom: 3px;
-          border-bottom: 1px solid $purpleHue;
+          font-weight: bolder;
 
           &:hover {
             color: darken($purpleHue, 15%);
