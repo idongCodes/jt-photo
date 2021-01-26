@@ -11,6 +11,13 @@ html body header {
   background-repeat: no-repeat;
   background-position: top;
 }
+@media all and (max-width: 425px) {
+  html body header {
+    background-position: left;
+    padding-top: 0;
+    height: 70vh;
+  }
+}
 html body header .top-bar {
   background: rgba(255, 255, 255, 0.8);
   display: flex;
@@ -30,10 +37,26 @@ html body header .top-bar .logo a img {
   width: 80px;
   height: 80px;
 }
+@media all and (max-width: 425px) {
+  html body header .top-bar .logo a img {
+    width: 40px;
+    height: 40px;
+  }
+}
 html body header .top-bar .logo a h4 {
   color: #6c63ff;
   font-family: serif;
   font-size: 1.5rem;
+}
+@media all and (max-width: 425px) {
+  html body header .top-bar .logo a h4 {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 425px) {
+  html body header .top-bar nav {
+    padding: 0 15px;
+  }
 }
 html body header .top-bar nav a {
   padding: 3px 15px;
@@ -46,12 +69,23 @@ html body header .top-bar nav a {
 html body header .top-bar nav a:hover {
   color: grey;
 }
+@media all and (max-width: 425px) {
+  html body header .top-bar nav a {
+    padding: 3px 10px;
+    font-size: 0.6rem;
+  }
+}
 html body header .hero-content {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.7);
   padding: 14% 0 0 0;
+}
+@media all and (max-width: 425px) {
+  html body header .hero-content {
+    padding: 0;
+  }
 }
 html body header .hero-content * {
   margin: 20px 0 0 7%;
@@ -60,8 +94,24 @@ html body header .hero-content h1 {
   color: #6c63ff;
   font-size: 5rem;
 }
+@media all and (max-width: 425px) {
+  html body header .hero-content h1 {
+    font-size: 2rem;
+  }
+}
 html body header .hero-content h3 {
   font-size: 3.5rem;
+}
+@media all and (max-width: 425px) {
+  html body header .hero-content h3 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 425px) {
+  html body header .hero-content .mobile-hero-content {
+    position: relative;
+    top: 120px;
+  }
 }
 html body header .hero-content .book-btn {
   text-decoration: none;
@@ -79,6 +129,15 @@ html body header .hero-content .book-btn {
 html body header .hero-content .book-btn:hover {
   background: grey;
 }
+@media all and (max-width: 425px) {
+  html body header .hero-content .book-btn {
+    position: relative;
+    top: 165px;
+    left: 0;
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
 html body #about {
   display: flex;
   align-items: flex-start;
@@ -88,20 +147,44 @@ html body #about {
   border-radius: 20px;
   box-shadow: 5px 5px 5px grey;
 }
+@media all and (max-width: 425px) {
+  html body #about {
+    padding: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
 html body #about .copy {
   width: 40%;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
+@media all and (max-width: 425px) {
+  html body #about .copy {
+    width: 100%;
+  }
+}
 html body #about .copy .abt-title h3 {
   margin: 0 0 15px;
   color: white;
   font-size: 4rem;
 }
+@media all and (max-width: 425px) {
+  html body #about .copy .abt-title h3 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+}
 html body #about .copy .abt-title h4 {
   margin: 0;
   font-size: 2rem;
+}
+@media all and (max-width: 425px) {
+  html body #about .copy .abt-title h4 {
+    text-align: left;
+    font-size: 1.2rem;
+  }
 }
 html body #about .copy .abt-title h4 a {
   color: black;
@@ -113,6 +196,13 @@ html body #about .copy p {
   color: #ddd;
   line-height: 2.5rem;
   font-size: 1.8rem;
+}
+@media all and (max-width: 425px) {
+  html body #about .copy p {
+    line-height: 1.9rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
 }
 html body #about .bk-btn-abt {
   border: 2px solid white;
@@ -129,6 +219,13 @@ html body #about .bk-btn-abt:hover {
   background: white;
   color: #6c63ff;
 }
+@media all and (max-width: 425px) {
+  html body #about .bk-btn-abt {
+    width: 35%;
+    margin: 0 0 30px;
+    font-size: 1rem;
+  }
+}
 html body #about .price-card {
   background: white;
   box-shadow: 5px 5px 10px black;
@@ -138,6 +235,12 @@ html body #about .price-card {
   margin: 0 auto;
   padding: 15px;
 }
+@media all and (max-width: 425px) {
+  html body #about .price-card {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+}
 html body #about .price-card h3 {
   margin: 60px auto 0;
   line-height: 3rem;
@@ -145,12 +248,33 @@ html body #about .price-card h3 {
   width: 70%;
   font-size: 10rem;
 }
+@media all and (max-width: 425px) {
+  html body #about .price-card h3 {
+    font-size: 5rem;
+    margin: 15px auto 30px;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    width: 80%;
+  }
+}
 html body #about .price-card h3 span {
   font-size: 1.7rem;
+}
+@media all and (max-width: 425px) {
+  html body #about .price-card h3 span {
+    font-size: 1.3rem;
+  }
 }
 html body #about .price-card p {
   color: rgba(0, 0, 0, 0.7);
   margin: 15px auto;
+}
+@media all and (max-width: 425px) {
+  html body #about .price-card p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 html body #about .price-card small {
   color: red;
@@ -162,10 +286,20 @@ html body #about .gallery {
   align-items: center;
   justify-content: center;
 }
+@media all and (max-width: 425px) {
+  html body #about .gallery {
+    width: 100%;
+  }
+}
 html body #about .gallery img {
   width: 50%;
   filter: grayscale(0.9);
   transition-duration: 500ms;
+}
+@media all and (max-width: 425px) {
+  html body #about .gallery img {
+    width: 100%;
+  }
 }
 html body #about .gallery img:hover {
   filter: grayscale(0);
@@ -174,6 +308,11 @@ html body #about .gallery img:hover {
   position: relative;
   z-index: 2;
   transition-duration: 500ms;
+}
+@media all and (max-width: 425px) {
+  html body #about .gallery img:hover {
+    transform: scale(1);
+  }
 }
 html body #contact {
   height: 70vh;
@@ -186,16 +325,39 @@ html body #contact h1 {
   font-size: 2.8rem;
   color: #6c63ff;
 }
+@media all and (max-width: 425px) {
+  html body #contact h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
 html body #contact .map-form {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 2.5%;
 }
+@media all and (max-width: 425px) {
+  html body #contact .map-form {
+    flex-direction: column-reverse;
+  }
+}
+@media all and (max-width: 425px) {
+  html body #contact .map-form iframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 html body #contact .map-form form {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+@media all and (max-width: 425px) {
+  html body #contact .map-form form {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 html body #contact .map-form form * {
   padding: 1.5%;
@@ -217,6 +379,11 @@ html body #contact .map-form form .submit {
 html body #contact .contact-icons {
   text-align: center;
 }
+@media all and (max-width: 425px) {
+  html body #contact .contact-icons {
+    padding: 20px 0 90px;
+  }
+}
 html body #contact .contact-icons a {
   text-decoration: none;
   color: #6c63ff;
@@ -224,6 +391,11 @@ html body #contact .contact-icons a {
 }
 html body #contact .contact-icons a:hover {
   color: grey;
+}
+@media all and (max-width: 425px) {
+  html body #contact .contact-icons a {
+    font-size: 2rem;
+  }
 }
 html body #contact .contact-icons * {
   margin: 0 0.5%;
@@ -233,6 +405,22 @@ html body footer {
   text-align: center;
   margin-top: 4%;
 }
+@media all and (max-width: 425px) {
+  html body footer {
+    position: fixed;
+    z-index: 97;
+    padding: 5px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #6c63ff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 html body footer small a {
   text-decoration: none;
   color: #6c63ff;
@@ -241,6 +429,12 @@ html body footer small a {
 }
 html body footer small a:hover {
   color: #2417ff;
+}
+@media all and (max-width: 425px) {
+  html body footer small a {
+    color: white;
+    border-bottom: 1px solid white;
+  }
 }
 html body .back-to-top {
   position: fixed;
@@ -259,6 +453,11 @@ html body .back-to-top a {
 }
 html body .back-to-top a:hover {
   background: grey;
+}
+@media all and (max-width: 425px) {
+  html body .back-to-top a {
+    opacity: 0.3;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
