@@ -196,7 +196,6 @@ html {
       @media all and (max-width: $mobile) {
         padding: 20px;
         flex-direction: column;
-        margin-bottom: 20px;
       }
 
       .copy {
@@ -391,8 +390,7 @@ html {
       margin-bottom: 10px;
 
       @media all and (max-width: $mobile) {
-        // padding: 15px;
-        // margin-bottom: 60px;
+        padding: 15px 0;
       }
 
       h1 {
@@ -415,6 +413,7 @@ html {
 
         @media all and (max-width: $mobile) {
           flex-direction: column-reverse;
+          margin-bottom: 30px;
         }
 
         iframe {
@@ -422,7 +421,7 @@ html {
 
           @media all and (max-width: $mobile) {
             width: 100%;
-            margin-bottom: 20px;
+            border-radius: 8px;
           }
         }
 
@@ -465,10 +464,6 @@ html {
         text-align: center;
         margin: 0;
 
-        @media all and (max-width: $mobile) {
-          padding: 20px 0 90px;
-        }
-
         a {
           text-decoration: none;
           color: $purpleHue;
@@ -497,19 +492,9 @@ html {
       text-align: center;
 
       @media all and (max-width: $mobile) {
-        position: fixed;
-        z-index: 97;
-        padding: 5px;
-        color: white;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: rgba($purpleHue, 1);
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      } 
+        padding: 15px 0 25px;
+        margin: -10px;
+      }
 
       small {
         a {
@@ -522,9 +507,7 @@ html {
           }
 
           @media all and (max-width: $mobile) {
-            color: white;
-            border-bottom: 1px solid white;
-          }
+            color: $purpleHue;}
         }
       }
     }
@@ -535,6 +518,12 @@ html {
       z-index: 98;
       bottom: 40px;
       right: 40px;
+      
+      @media all and (max-width: $mobile) {
+        transform: rotate(-90deg);
+        right: -47px;
+        bottom: 40%;
+      }
 
       a {
         text-decoration: none;
@@ -550,7 +539,10 @@ html {
         }
 
         @media all and (max-width: $mobile) {
-          opacity: .3;
+          opacity: 1;
+          padding-top: 2px;
+
+
         }
       }
     }

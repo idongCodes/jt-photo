@@ -151,7 +151,6 @@ html body #about {
   html body #about {
     padding: 20px;
     flex-direction: column;
-    margin-bottom: 20px;
   }
 }
 html body #about .copy {
@@ -318,6 +317,11 @@ html body #contact {
   padding-top: 60px;
   margin-bottom: 10px;
 }
+@media all and (max-width: 425px) {
+  html body #contact {
+    padding: 15px 0;
+  }
+}
 html body #contact h1 {
   text-align: center;
   margin-bottom: 4%;
@@ -339,6 +343,7 @@ html body #contact .map-form {
 @media all and (max-width: 425px) {
   html body #contact .map-form {
     flex-direction: column-reverse;
+    margin-bottom: 30px;
   }
 }
 html body #contact .map-form iframe {
@@ -347,7 +352,7 @@ html body #contact .map-form iframe {
 @media all and (max-width: 425px) {
   html body #contact .map-form iframe {
     width: 100%;
-    margin-bottom: 20px;
+    border-radius: 8px;
   }
 }
 html body #contact .map-form form {
@@ -382,11 +387,6 @@ html body #contact .contact-icons {
   text-align: center;
   margin: 0;
 }
-@media all and (max-width: 425px) {
-  html body #contact .contact-icons {
-    padding: 20px 0 90px;
-  }
-}
 html body #contact .contact-icons a {
   text-decoration: none;
   color: #6c63ff;
@@ -410,18 +410,8 @@ html body footer {
 }
 @media all and (max-width: 425px) {
   html body footer {
-    position: fixed;
-    z-index: 97;
-    padding: 5px;
-    color: white;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #6c63ff;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 15px 0 25px;
+    margin: -10px;
   }
 }
 html body footer small a {
@@ -434,8 +424,7 @@ html body footer small a:hover {
 }
 @media all and (max-width: 425px) {
   html body footer small a {
-    color: white;
-    border-bottom: 1px solid white;
+    color: #6c63ff;
   }
 }
 html body .back-to-top {
@@ -443,6 +432,13 @@ html body .back-to-top {
   z-index: 98;
   bottom: 40px;
   right: 40px;
+}
+@media all and (max-width: 425px) {
+  html body .back-to-top {
+    transform: rotate(-90deg);
+    right: -47px;
+    bottom: 40%;
+  }
 }
 html body .back-to-top a {
   text-decoration: none;
@@ -458,7 +454,8 @@ html body .back-to-top a:hover {
 }
 @media all and (max-width: 425px) {
   html body .back-to-top a {
-    opacity: 0.3;
+    opacity: 1;
+    padding-top: 2px;
   }
 }
 
